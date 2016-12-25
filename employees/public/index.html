@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/w3.css">
+    <script src="js/bin.js"></script>
+    <title>BINBANK employees</title>
+</head>
+<body>
+<div id="header-container" class="w3-container w3-center">
+    <header class="w3-light-gray w3-round-jumbo">
+        <h1>ПАО «БИНБАНК»: телефоны сотрудников</h1>
+    </header>
+</div>
+<div class="w3-container w3-center">
+    <div class="w3-conatiner w3-center" id="form-container">
+        <form class="w3-panel w3-left" id="command-panel" name="command-panel"
+            method="post">
+            <label>Табельный номер</label>
+            <input class="w3-input w3-border" id="pernr" name="pernr" type="number">
+            <label>Имя</label>
+            <input class="w3-input w3-border" id="first-name" name="first-name" type="text">
+            <label>Фамилия</label>
+            <input class="w3-input w3-border" id="last-name" name="last-name" type="text">
+            <label>Отчество</label>
+            <input class="w3-input w3-border" id="middle-name" name="middle-name" type="text">
+            <label>Номер телефона</label>
+            <input class="w3-input w3-border"
+                   placeholder="+7(xxx) xxx-xx-xx" id="phone" name="phone" type="tel">
+            <label>Внутренний номер</label>
+            <input class="w3-input w3-border" placeholder="xxxxx" id="extension" name="extension"
+                    type="text">
+            <br/>
+            <button class="w3-btn w3-left w3-light-gray" id="create" name="create"
+                    formaction="output.html">Создать</button>
+        </form>
+        <article>
+            <p>
+                <table>
+                	<tr>
+                		<th>Номер</th>
+                		<th>Имя</th>
+                		<th>Фамилия</th>
+                		<th>Отчество</th>
+                		<th>Телефон</th>
+                	</tr>
+                </table>
+            </p>
+        </article>
+    </div>
+    <div class="w3-container w3-bottom" id="footer-container">
+        <footer class="w3-light-gray w3-round-jumbo" id="bottom-footer">
+            <h4 id="sign"></h4>
+        </footer>
+    </div>
+</div>
+<script>
+    getCurrentDate();
+</script>
+</body>
+</html>
